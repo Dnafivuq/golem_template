@@ -2,41 +2,49 @@
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
+![Flake8 Linting](https://github.com/Dnafivuq/golem_template/actions/workflows/lint.yml/badge.svg)
+![Pytest](https://github.com/Dnafivuq/golem_template/actions/workflows/test.yml/badge.svg)
 
-Template repository for KNSI GOLEM projects made from cookiecutter data science template.
-This repository goal is to provide out of the box boiler plate code with clean project files structure.
-Additionally template Github CI is provided with pytest and flake8 checks implemented.
+Template repository for KNSI GOLEM projects made from the cookiecutter data science template.
+This repository's goal is to provide out-of-the-box boilerplate code with a clean project file structure.
+Additionally, the template includes a GitHub CI pipeline with pytest and flake8 checks implemented.
 
+
+You are free to delete any unnecessary folders and files. However, it is recommended to maintain the overall file structure to ensure clean code and compatibility with other KNSI GOLEM repositories.
 ## How to use
-Each functionality from making plots to training models are given it's respective file in the `src` folder - full description of files structure is provided in `Procject Organization` paragraph.
+Each functionality, from making plots to training models, is given its respective file in the `src` folder - a full description of the file structure is provided in the [Project Organization](#project-organization) section.
+
 
 Example usage:
-```
+
+```bash
 python3 -m src.dataset
 ```
 
 ## Additional informations
 ### venv
-Users are advised to use venv.
+Users are advised to use a virtual environment (`venv`).
+
+
 Example usage:
+```bash
+python3 -m venv .venv  # Create venv  
+source .venv/bin/activate  # Activate venv  
+pip install -r requirements.txt  # Install requirements to venv  
+```
+Basic Python libraries like pytest are already included in the requirements.
 
-```
-python3 -m venv .venv  # create venv
-source .venv/bin/activate  # activate venv
-pip install -r requirements.txt  # install requirements to venv
-```
-And install requirements from `requirements.txt`. Base python libs like pytests were already added to requirements.
-### dotenv
-Another fantastic tool is dotenv that let's configure environment variables in `.env` file.
-Lib `python-dotenv` was already included in requirements.
+### dotenv  
+Another useful tool is dotenv, which lets you configure environment variables in the `.env` file.  
+The `python-dotenv` library has already been added to the requirements.
 
-.env file:
-```
+**.env file example:**
+```bash
 API_KEY = "KNSI_GOLEM_API_KEY"
 ```
 
-Python file:
-```
+**Python code example:**
+```python
 from dotenv import load_dotenv
 import os
 
