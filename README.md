@@ -66,7 +66,7 @@ api_key = os.getenv("API_KEY")
 │   ├── processed      <- The final, canonical data sets for modeling.
 │   └── raw            <- The original, immutable data dump.
 │
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
+├── docs               <- Project's docs
 │
 ├── models             <- Trained and serialized models, model predictions, or model summaries
 │
