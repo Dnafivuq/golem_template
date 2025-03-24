@@ -16,7 +16,7 @@ You are free to delete any unnecessary folders and files. However, it is recomme
 Each functionality, from making plots to training models, is given its respective file in the `src` folder - a full description of the file structure is provided in the [Project Organization](#project-organization) section.
 
 
-Example usage:
+Example code run:
 
 ```bash
 python3 -m src.dataset
