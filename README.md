@@ -1,9 +1,10 @@
 # KNSI GOLEM Template Repository
+[![Flake8 Linting](https://github.com/Dnafivuq/golem_template/actions/workflows/lint.yml/badge.svg)]
+[![Pytest](https://github.com/Dnafivuq/golem_template/actions/workflows/test.yml/badge.svg)]
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
-[![Flake8 Linting](https://github.com/Dnafivuq/golem_template/actions/workflows/lint.yml/badge.svg)](https://github.com/Dnafivuq/golem_template/actions/workflows/lint.yml/badge.svg)
-[![Pytest](https://github.com/Dnafivuq/golem_template/actions/workflows/test.yml/badge.svg)](https://github.com/Dnafivuq/golem_template/actions/workflows/test.yml/badge.svg)
+
 
 Template repository for KNSI GOLEM projects made from the cookiecutter data science template.
 This repository's goal is to provide out-of-the-box boilerplate code with a clean project file structure.
