@@ -10,7 +10,7 @@ Template repository for KNSI GOLEM projects made from the cookiecutter data scie
 This repository's goal is to provide out-of-the-box boilerplate code with a clean project file structure.
 Additionally, the template includes a GitHub CI pipeline with pytest and flake8 checks implemented.
 
----
+
 You are free to delete any unnecessary folders and files. However, it is recommended to maintain the overall file structure to ensure clean code and compatibility with other KNSI GOLEM repositories.
 ## How to use
 Each functionality, from making plots to training models, is given its respective file in the `src` folder - a full description of the file structure is provided in the [Project Organization](#project-organization) section.
