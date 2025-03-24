@@ -6,7 +6,7 @@
 </a>
 
 
-Template repository for KNSI GOLEM projects made from the cookiecutter data science template.
+Template repository for KNSI GOLEM projects made from the [cookiecutter data science template](https://github.com/drivendataorg/cookiecutter-data-science).
 This repository's goal is to provide out-of-the-box boilerplate code with a clean project file structure.
 Additionally, the template includes a GitHub CI pipeline with pytest and flake8 checks implemented.
 
