@@ -34,6 +34,7 @@ jobs:
         run: |
           if [ -z "$(find tests -name 'test_*.py')" ]; then
             echo "No test files found"
+            echo "NO_TEST_FILES=true" >> $GITHUB_ENV
             exit 0
           fi
         
@@ -42,11 +43,11 @@ jobs:
           pip install pytest
 
       - name: Skip further steps if no test files
-        if: steps.check_test_files.outputs.result == 'exit 0'
+        if: env.NO_TEST_FILES == 'true'
         run: |
           echo "No test files found, skipping further steps."
 
       - name: Run tests with pytest
-        if: steps.check_test_files.outputs.result != 'exit 0'
+        if: env.NO_TEST_FILES != 'true'
         run: |
           pytest
