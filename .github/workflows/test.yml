@@ -29,6 +29,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Check if there are any test files
+        run: |
+          if [ -z "$(find tests -name 'test_*.py')" ]; then
+            echo "No test files found"
+            exit 0
+          fi
+        
       - name: Install pytest
         run: |
           pip install pytest
