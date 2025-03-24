@@ -9,8 +9,7 @@
 Template repository for KNSI GOLEM projects made from the cookiecutter data science template.
 This repository's goal is to provide out-of-the-box boilerplate code with a clean project file structure.
 Additionally, the template includes a GitHub CI pipeline with pytest and flake8 checks implemented.
-
-
+---
 You are free to delete any unnecessary folders and files. However, it is recommended to maintain the overall file structure to ensure clean code and compatibility with other KNSI GOLEM repositories.
 ## How to use
 Each functionality, from making plots to training models, is given its respective file in the `src` folder - a full description of the file structure is provided in the [Project Organization](#project-organization) section.
@@ -22,7 +21,7 @@ Example usage:
 python3 -m src.dataset
 ```
 
-## Additional informations
+## Additional tips and info
 ### venv
 Users are advised to use a virtual environment (`venv`).
 
@@ -34,6 +33,7 @@ source .venv/bin/activate  # Activate venv
 pip install -r requirements.txt  # Install requirements to venv  
 ```
 Basic Python libraries like pytest are already included in the requirements.
+---
 
 ### dotenv  
 Another useful tool is dotenv, which lets you configure environment variables in the `.env` file.  
