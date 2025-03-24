@@ -30,6 +30,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Check if there are any test files
+        id: check_test_files
         run: |
           if [ -z "$(find tests -name 'test_*.py')" ]; then
             echo "No test files found"
@@ -40,6 +41,12 @@ jobs:
         run: |
           pip install pytest
 
+      - name: Skip further steps if no test files
+        if: steps.check_test_files.outputs.result == 'exit 0'
+        run: |
+          echo "No test files found, skipping further steps."
+
       - name: Run tests with pytest
+        if: steps.check_test_files.outputs.result != 'exit 0'
         run: |
           pytest
