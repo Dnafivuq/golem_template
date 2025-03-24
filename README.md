@@ -4,7 +4,6 @@
 </a>
 
 [![Flake8 Linting](https://github.com/Dnafivuq/golem_template/actions/workflows/lint.yml/badge.svg)](https://github.com/Dnafivuq/golem_template/actions/workflows/lint.yml/badge.svg)
-
 [![Pytest](https://github.com/Dnafivuq/golem_template/actions/workflows/test.yml/badge.svg)](https://github.com/Dnafivuq/golem_template/actions/workflows/test.yml/badge.svg)
 
 Template repository for KNSI GOLEM projects made from the cookiecutter data science template.
