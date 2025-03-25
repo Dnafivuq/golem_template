@@ -39,7 +39,7 @@ pip install -r requirements.txt  # Install requirements to venv
 ```
 Basic Python libraries like pytest are already included in the requirements.
 
---------
+---
 
 ### dotenv
 The dotenv library allows you to define environment constants or secrets, such as API keys, in a single place. It simplifies the management of environment variables by letting you configure them in a `.env` file.
