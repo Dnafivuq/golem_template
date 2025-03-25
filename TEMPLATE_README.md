@@ -55,7 +55,7 @@ To get started with this project, follow these steps:
 In some cases, the project may serve as a tool or library. For these types of repositories, it's helpful to provide a variety of usage examples to demonstrate how the code can be applied.
 
 ## **Additional Resources**  
-- Detailed information about dependencies and tools is provided in the [Project Organization](#project-organization) section.  
+- Detailed information about project structure is provided in the [Project Organization](#project-organization) section.  
 - Further explanations about model training and evaluation are documented in the `notebooks/` folder.
 
 ## Project Organization
