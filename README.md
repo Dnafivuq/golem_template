@@ -28,10 +28,10 @@ Another goal of this repository is to provide a [template README](/TEMPLATE_READ
 ## Additional tips and info
 To further help with development, it is recommended to use useful tools for managing dependencies and environment configurations.
 ### venv
-Users are advised to use a virtual environment (`venv`).
+Python's `venv` allows you to easily manage isolated environments for your projects, enabling you to work with specific module/library versions or even different Python versions without conflicting with the globally installed Python interpreter.
 
 
-Example usage:
+How to use:
 ```bash
 python3 -m venv .venv  # Create venv  
 source .venv/bin/activate  # Activate venv  
@@ -41,8 +41,10 @@ Basic Python libraries like pytest are already included in the requirements.
 
 --------
 
-### dotenv  
-Another useful tool is dotenv, which lets you configure environment variables in the `.env` file.  
+### dotenv
+The dotenv library allows you to define environment constants or secrets, such as API keys, in a single place. It simplifies the management of environment variables by letting you configure them in a `.env` file.
+
+
 The `python-dotenv` library has already been added to the requirements.
 
 **.env file example:**
@@ -50,7 +52,7 @@ The `python-dotenv` library has already been added to the requirements.
 API_KEY = "KNSI_GOLEM_API_KEY"
 ```
 
-**Python code example:**
+**python code example:**
 ```python
 from dotenv import load_dotenv
 import os
