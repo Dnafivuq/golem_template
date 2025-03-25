@@ -6,23 +6,27 @@
 </a>
 
 
-Template repository for KNSI GOLEM projects made from the [cookiecutter data science template](https://github.com/drivendataorg/cookiecutter-data-science).
+Template repository for KNSI GOLEM python projects made from the [cookiecutter data science template](https://github.com/drivendataorg/cookiecutter-data-science).
+
 This repository's goal is to provide out-of-the-box boilerplate code with a clean project file structure.
 Additionally, the template includes a GitHub CI pipeline with pytest and flake8 checks implemented.
 
 
 You are free to delete any unnecessary folders and files. However, it is recommended to maintain the overall file structure to ensure clean code and compatibility with other KNSI GOLEM repositories.
-## How to use
-Each functionality, from making plots to training models, is given its respective file in the `src` folder - a full description of the file structure is provided in the [Project Organization](#project-organization) section.
+## What is here?
+### Code and Files Structure
+To ensure a transparent and easily understandable file structure for external users each module, from making plots to training models, is given its respective file in the `src` folder. A full description of the file structure is provided in the [Project Organization](#project-organization) section.
 
 
-Example code run:
-
+**How to run code in repository?**
 ```bash
 python3 -m src.dataset
 ```
+### Readme
+Another goal of this repository is to provide a [template README](/TEMPLATE_README.md) that can be easily edited and adapted. The README serves as a foundation to help users create their own well-structured documentation, ensuring consistency across all projects within our repository.
 
 ## Additional tips and info
+To further help with development, it is recommended to use useful tools for managing dependencies and environment configurations.
 ### venv
 Users are advised to use a virtual environment (`venv`).
 
